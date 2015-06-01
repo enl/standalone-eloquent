@@ -1,0 +1,9 @@
+#!/usr/bin/php
+<?php
+
+require_once __DIR__.'/../vendor/autoload.php';
+require_once __DIR__.'/config/services.php';
+
+$container = \Illuminate\Container\Container::getInstance();
+
+$app = $container->make('console')->run();
